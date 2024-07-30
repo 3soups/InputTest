@@ -34,7 +34,10 @@
     </style>
 </head>
 <body>
-    <script>screen.orientation.lock("portrait")</script>
+    <script>
+        var myScreenOrientation = window.screen.orientation;
+        myScreenOrientation.lock("portrait");
+    </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
