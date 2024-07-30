@@ -34,13 +34,18 @@
     </style>
 </head>
 <body>
-    <script>
+    <!-- <script>
         if (document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen) {
         setTimeout(function(){
             window.screen.orientation.lock("portrait");
         }    , 200);
-    }
-    </script>
+        } else {
+            document.documentElement.requestFullscreen();
+            setTimeout(function(){
+            window.screen.orientation.lock("portrait");
+        }    , 200);
+        }
+    </script> -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
